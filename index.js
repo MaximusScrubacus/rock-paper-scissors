@@ -1,5 +1,15 @@
+// function Game (){
 
-// Player Choice
+
+// let score = playerScore();
+// console.log(score);
+
+// let p = 0;
+// let c = 0;
+
+
+
+for(let i = 0; i < 20;){
 
 let playerPrompt = window.prompt("Choose Between Rock, Paper, or Scissors");
 let playerChoice = playerPrompt.toLowerCase();
@@ -63,8 +73,20 @@ function roundWinner(){
     }
 
 let roundWin = roundWinner();
-console.log(roundWin)
-// let roundWin = roundWinner();
 
-// console.log(roundWinner())
- 
+
+}
+console.log(roundWin)
+function playerScore(){
+
+    if(roundWin === "Player Wins!") {
+        return p++
+        
+    } else if(roundWin === "You lose this round!, try again !!!"){
+        return c++
+    } else{
+        return "Play Another!"
+    }
+}
+
+// }
